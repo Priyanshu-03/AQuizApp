@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="TITLE OF THE QUIZ"
+        android:textAlignment="center"/>
+
+    <ImageView
+        android:id="@+id/title_img"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        tools:src="@drawable/ic_launcher_background" />
+
+    <TextView
+        android:id="@+id/question_attempted"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="1/10"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="24sp"/>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:max="10"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"/>
+
+    <TextView
+        android:id="@+id/text_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="This is where the questions will be shown"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/button_opt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="OPTION 1"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button_opt2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="OPTION 2"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button_opt3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="OPTION 3"
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:id="@+id/button_opt4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="OPTION 4"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>
